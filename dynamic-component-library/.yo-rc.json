@@ -1,0 +1,21 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "18.18.0",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.24.0"
+    },
+    "version": "1.20.0",
+    "libraryName": "dynamic-component-library",
+    "libraryId": "b1efe4cf-d0f1-4d65-afb6-8891f0b85566",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "dynamic-component-library",
+    "solutionShortDescription": "dynamic-component-library description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "library"
+  }
+}

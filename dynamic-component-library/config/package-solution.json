@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "Infodash Dynamic Components",
+    "id": "4c78cd7b-016b-410e-937e-9311ed0711a2",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "Infodash",
+      "websiteUrl": "https://getinfodash.com",
+      "privacyUrl": "https://getinfodash.com/privacy-policy",
+      "termsOfUseUrl": "https://getinfodash.com/terms-conditions/",
+      "mpnId": "2675352"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "Import your own custom libaries into Infodash"
+      },
+      "longDescription": {
+        "default": "Dynamic Components allows you to write your own React components, services and tools and import them into Infodash."
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "dynamic-components Feature",
+        "description": "The feature that activates elements of the dynamic-components solution.",
+        "id": "f8e36c3c-0c06-4885-97a8-44f9d21dd486",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/infodash-dynamic-components.sppkg"
+  }
+}

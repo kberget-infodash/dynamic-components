@@ -1,0 +1,21 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "18.18.0",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.24.0"
+    },
+    "version": "1.20.0",
+    "libraryName": "dynamic-component-debugger",
+    "libraryId": "b314d654-0904-4002-ad36-f16a267e29db",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "dynamic-component-debugger",
+    "solutionShortDescription": "dynamic-component-debugger description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

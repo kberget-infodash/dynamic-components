@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "dynamic-component-debugger-client-side-solution",
+    "id": "b314d654-0904-4002-ad36-f16a267e29db",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.20.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "dynamic-component-debugger description"
+      },
+      "longDescription": {
+        "default": "dynamic-component-debugger description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "dynamic-component-debugger Feature",
+        "description": "The feature that activates elements of the dynamic-component-debugger solution.",
+        "id": "9e5f80c4-6430-47de-86d7-b454721ac0b3",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/dynamic-component-debugger.sppkg"
+  }
+}

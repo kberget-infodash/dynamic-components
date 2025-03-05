@@ -1,0 +1,18 @@
+[
+    {
+        "label": "Central Time",
+        "offset": "-6"
+    },
+    {
+        "label": "Eastern Time",
+        "offset": "-5"
+    },
+    {
+        "label": "Mountain Time",
+        "offset": "-7"
+    },
+    {
+        "label": "London (GMT)",
+        "offset": "0"
+    }
+]

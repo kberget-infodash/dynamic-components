@@ -1,0 +1,14 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+.dynamicComponentDebugger {
+  overflow: hidden;
+  padding: 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  color: "[theme:bodyText, default: #323130]";
+  color: var(--bodyText);
+  &.teams {
+    font-family: $ms-font-family-fallbacks;
+  }
+}

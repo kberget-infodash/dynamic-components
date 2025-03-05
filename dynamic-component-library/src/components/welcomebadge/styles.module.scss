@@ -1,0 +1,64 @@
+.badge {
+    display: grid;
+    grid-template-columns: 100px 2fr;
+    gap: 20px;
+    padding: 20px 10px;
+
+    .avatar {
+        img {
+            width: 100%;
+            border-radius: 50%;
+        }
+    }
+
+    .content {
+        display: grid;
+        grid-template-rows: 25px 1fr 30px;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 5px 0;
+
+        .subtitle {
+            text-transform: uppercase;
+            color: var(--themePrimary);
+        }
+
+        h2 {
+            margin: 0;
+        }
+
+        .links {
+            ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                gap: 10px;
+
+                li {
+                    a {
+                        text-decoration: none;
+                        color: #999999;
+                        font-size: 1rem;
+
+                        &:hover {
+                            color: #242424;
+                        }
+                    }
+
+                    &::after {
+                        content: "|";
+                        color: #e3e3e3;
+                        margin-left: 10px;
+                    }
+
+                    &:last-child {
+                        &::after {
+                            content: '';
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

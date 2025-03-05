@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "dynamic-components": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/dynamicComponentDebugger/DynamicComponentDebuggerWebPart.js",
+          "manifest": "./src/webparts/dynamicComponentDebugger/DynamicComponentDebuggerWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "DynamicComponentDebuggerWebPartStrings": "lib/webparts/dynamicComponentDebugger/loc/{locale}.js"
+  }
+}

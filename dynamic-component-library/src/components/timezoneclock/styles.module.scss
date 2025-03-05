@@ -1,0 +1,54 @@
+.tz {
+    .today {
+        display: grid;
+        grid-template-columns: 75px 1fr;
+        gap: 10px;
+    }
+
+    .date {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-weight: 100;
+        text-align: center;
+        font-size: 1.2rem;
+        background-color: #e3e3e3;
+    }
+
+    .num {
+        font-weight: 700;
+        font-size: 1.7rem;
+    }
+
+    .zones {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        max-width: 200px;
+    }
+
+    .time {
+        padding: 10px;
+        background-color: var(--themePrimary);
+        text-align: center;
+        color: #fff;
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .lon {
+        background-color: #454545;
+
+    }
+
+    .time .label {
+        font-weight: 100;
+        text-transform: uppercase;
+    }
+
+    .clock {
+        font-weight: 600;
+    }
+}
