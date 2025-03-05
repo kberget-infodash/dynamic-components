@@ -52,16 +52,6 @@ export class InfodashApiClient {
     });
   }
 
-  // private async onInit(): Promise<void> {
-  //   try {
-  //     await this.getAPIUrl();
-
-  //     return Promise.resolve();
-  //   } catch (error) {
-  //     return Promise.reject(error);
-  //   }
-  // }
-
   /**
    * Execute SQL Stored Procedure
    */

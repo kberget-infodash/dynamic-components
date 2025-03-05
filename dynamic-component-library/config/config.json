@@ -11,7 +11,10 @@
       ]
     }
   },
-  "externals": {},
+  "externals": {
+    "react": "React",
+    "react-dom": "ReactDOM"
+  },
   "localizedResources": {
     "ComponentLibraryLibraryStrings": "lib/libraries/components/loc/{locale}.js"
   }

@@ -25,7 +25,7 @@ export function useWeather(serviceScope: ServiceScope, location: string): UseWea
   useEffect(() => {
     const apiClient = new InfodashApiClient(serviceScope);
 
-    const fetchWeather = async () => {
+    const fetchWeather = async (): Promise<void> => {
       try {
         const data: any = await _cache.withCache(`${location?.toLowerCase()}_weather`, async () => {
           return await apiClient.getWeatherByLocation(location);

@@ -27,7 +27,7 @@
     },
     "features": [
       {
-        "title": "dynamic-components Feature",
+        "title": "Dynamic Components Feature",
         "description": "The feature that activates elements of the dynamic-components solution.",
         "id": "f8e36c3c-0c06-4885-97a8-44f9d21dd486",
         "version": "1.0.0.0"

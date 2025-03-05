@@ -13,19 +13,19 @@ import CacheService from "../services/cache.api";
 export type UseGraphUserDetailsResult = {
   userDetails: IGraphUser | undefined;
   loading: boolean;
-  error: string | null;
+  error: string | undefined;
 };
 
 export function useGraphUserDetails(serviceScope: ServiceScope): UseGraphUserDetailsResult {
   const [userDetails, setUserDetails] = useState<IGraphUser | undefined>();
   const [loading, setLoading] = useState<boolean>(true);
-  const [error, setError] = useState<string | null>(null);
+  const [error, setError] = useState<string | undefined>();
   const _cache: CacheService = new CacheService();
 
   useEffect(() => {
     const graphClient = new InfodashGraphClient(serviceScope);
 
-    const fetchUserDetails = async () => {
+    const fetchUserDetails = async (): Promise<void> => {
       try {
         const data = await _cache.withCache("graphUserDetails", async () => {
           return graphClient.getMyDetails();

@@ -5,7 +5,7 @@ import * as ReactDom from "react-dom";
 import { Version } from "@microsoft/sp-core-library";
 import { type IPropertyPaneConfiguration } from "@microsoft/sp-property-pane";
 import { BaseClientSideWebPart } from "@microsoft/sp-webpart-base";
-import { CacheService } from "dynamic-component-library";
+import { CacheService } from "../../services/cache.api";
 import * as strings from "DynamicComponentDebuggerWebPartStrings";
 import { DynamicComponentDebugger } from "./components/DynamicComponentDebugger";
 import { IDynamicComponentDebuggerProps } from "./components/IDynamicComponentDebuggerProps";

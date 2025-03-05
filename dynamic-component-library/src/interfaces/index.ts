@@ -1,70 +1,19 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { WebPartContext } from "@microsoft/sp-webpart-base";
 import { ServiceScope } from "@microsoft/sp-core-library";
+import {
+	IEventTelemetry,
+	IExceptionTelemetry,
+} from "@microsoft/applicationinsights-web";
 
 export interface IInfodashBaseProps {
   config: any;
   user: any;
   context: WebPartContext;
   serviceScope: ServiceScope;
-  trackEvent(eventName: string, properties?: any): void;
+  trackEvent(event: IEventTelemetry): void;
   trackException(exception: IExceptionTelemetry): void;
 }
-
-/**
- * @export
- * @interface IExceptionTelemetry
- * @description Exception interface used as primary parameter to trackException
- */
-export interface IExceptionTelemetry {
-  /**
-   * Unique guid identifying this error
-   */
-  id?: string;
-  /**
-   * @deprecated
-   * @type {Error}
-   * @memberof IExceptionTelemetry
-   * @description DEPRECATED: Please use exception instead. Behavior/usage for exception remains the same as this field.
-   */
-  error?: Error;
-  /**
-   * @type {Error}
-   * @memberof IExceptionTelemetry
-   * @description Error Object(s)
-   */
-  exception?: Error;
-  /**
-   * @description Specified severity of exception for use with
-   * telemetry filtering in dashboard
-   * @type {(SeverityLevel | number)}
-   * @memberof IExceptionTelemetry
-   */
-  severityLevel?: SeverityLevel | number;
-
-  /**
-   * Property bag to contain additional custom properties (Part C)
-   */
-  properties?: {
-    [key: string]: any;
-  };
-  /**
-   * Property bag to contain additional custom measurements (Part C)
-   * @deprecated -- please use properties instead
-   */
-  measurements?: {
-    [key: string]: number;
-  };
-}
-
-export declare enum SeverityLevel {
-  Verbose = 0,
-  Information = 1,
-  Warning = 2,
-  Error = 3,
-  Critical = 4,
-}
-
 export interface ITheme {
   themeLight: string;
   themeTertiary: string;
