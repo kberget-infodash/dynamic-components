@@ -1,1 +1,1 @@
-See [Knowledge Base](https://infodash.atlassian.net/wiki/spaces/ICS/pages/103448882/Dynamic+Components+Library) for setup instructions.
+See [Knowledge Base](https://infodash.atlassian.net/servicedesk/customer/portal/3/article/103448882) for setup instructions.
