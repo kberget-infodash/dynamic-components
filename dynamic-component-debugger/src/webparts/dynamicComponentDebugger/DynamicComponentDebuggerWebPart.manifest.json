@@ -20,7 +20,7 @@
     "group": { "default": "Advanced" },
     "title": { "default": "Dynamic Component Debugger" },
     "description": { "default": "Dynamic React Component Debugger" },
-    "officeFabricIconFontName": "Code",
+    "officeFabricIconFontName": "Bug",
     "properties": {
       "description": "Dynamic Component Debugger"
     }
